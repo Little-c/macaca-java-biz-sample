@@ -4,7 +4,8 @@ import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import macaca.client.common.GetElementWay;
 import macaca.java.biz.CommonUIBean;
-import org.junit.Test;
+//import org.junit.Test;
+import org.testng.annotations.Test;
 
 import macaca.java.biz.ResultGenerator;
 import com.javademo.pages.BaiDuPage;
@@ -51,23 +52,23 @@ public class SampleTest extends BaseTest {
             return;
         }
 
-        // 自动化首页List页
-        testHomePageList();
-        driver.sleep(1000);
-
-        // 测试webView Tab
-        homePage.tabWebView();
-        testWebView();
-        driver.sleep(1000);
+//        // 自动化首页List页
+//        testHomePageList();
+//        driver.sleep(1000);
+//
+//        // 测试webView Tab
+//        homePage.tabWebView();
+//        testWebView();
+//        driver.sleep(1000);
 
         // 测试浏览器
-        homePage.tabBaiDu();
-        testBaiDu();
-        driver.sleep(1000);
+//        homePage.tabBaiDu();
+//        testBaiDu();
+//        driver.sleep(1000);
 
         // 测试Personal
-        homePage.tabPersonal();
-        testPersonalPage();
+//        homePage.tabPersonal();
+//        testPersonalPage();
 
     }
 

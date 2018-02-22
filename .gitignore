@@ -1,8 +1,10 @@
 *.log
 /target/
 /screenshot/
+/test-output/
 .settings
 .classpath
 .project
+/.idea/
 *.sw*
 *.un~

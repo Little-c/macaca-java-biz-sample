@@ -11,6 +11,10 @@ import macaca.java.biz.ResultGenerator;
 import macaca.java.biz.BaseMacacaClient.PlatformType;
 import com.javademo.utils.Config;
 import com.alibaba.fastjson.JSONObject;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
 
 public class BaseTest {
 
@@ -19,7 +23,7 @@ public class BaseTest {
 
     BaseMacacaClient driver = new BaseMacacaClient();
 
-    @Before
+    @BeforeClass
     public void setUp() throws Exception {
 
         // 清除日志记录
@@ -56,7 +60,7 @@ public class BaseTest {
     }
 
 
-    @After
+    @AfterClass
     public void tearDown() throws Exception {
 
         try {
